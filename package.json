@@ -1,7 +1,7 @@
 {
-  "name": "my-rn-base-component",
+  "name": "my-rn-base-utils",
   "version": "1.0.0",
-  "description": "my-rn-base-component",
+  "description": "my-rn-base-utils",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
