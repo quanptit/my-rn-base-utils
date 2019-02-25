@@ -4,11 +4,10 @@ All project sẽ tham chiếu đến
 
 ##### Thêm Vào package.json
 ```
-"my-rn-ads": "git+https://gitlab.com/react-native-my-libs/my-rn-ads.git",
+"my-rn-base-component": "git+https://gitlab.com/react-native-my-libs/my-rn-base-component.git",
 ```
 
-Chạy 2 lệnh sau
+Chạy  lệnh sau
 ```
 npm install
-react-native link my-rn-ads
 ```
