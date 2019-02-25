@@ -1,4 +1,4 @@
-import RNFetchBlob from 'react-native-fetch-blob';
+import RNFetchBlob from 'rn-fetch-blob';
 const dirs = RNFetchBlob.fs.dirs;
 const fs = RNFetchBlob.fs;
 export default {

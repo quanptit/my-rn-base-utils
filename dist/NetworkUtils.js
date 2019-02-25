@@ -1,4 +1,4 @@
-import RNFetchBlob from 'react-native-fetch-blob';
+import RNFetchBlob from 'rn-fetch-blob';
 import FileUtils from './FileUtils';
 import { SecurityUtils } from "./SecurityUtils";
 export default class NetworkUtils {

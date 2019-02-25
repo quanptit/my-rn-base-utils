@@ -1,4 +1,4 @@
-import RNFetchBlob from 'react-native-fetch-blob'
+import RNFetchBlob from 'rn-fetch-blob'
 import {SecurityUtils} from "./SecurityUtils";
 
 const dirs = RNFetchBlob.fs.dirs;
