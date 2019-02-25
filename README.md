@@ -4,7 +4,7 @@ All project sẽ tham chiếu đến
 
 ##### Thêm Vào package.json
 ```
-"my-rn-base-component": "git+https://gitlab.com/react-native-my-libs/my-rn-base-component.git",
+"my-rn-base-utils": "git+https://gitlab.com/react-native-my-libs/my-rn-base-utils.git",
 ```
 
 Chạy  lệnh sau
