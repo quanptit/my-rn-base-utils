@@ -1,0 +1,22 @@
+{
+  "name": "my-rn-base-component",
+  "version": "1.0.0",
+  "description": "my-rn-base-component",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ads"
+  ],
+  "author": "Quan Trinh Van",
+  "license": "Quan Trinh Van",
+  "nativePackage": true,
+  "dependencies": {},
+  "peerDependencies": {
+    "lodash": "^4.17.4",
+    "react": "^16.3.1",
+    "react-native": "^0.55.4"
+  }
+}
