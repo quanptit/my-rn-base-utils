@@ -9,7 +9,7 @@ export declare class PreferenceUtils {
     static saveSeting(key: string, value: string | number, callback?: (isSuccess: boolean) => void): void;
     static getStringSetting(key: string): Promise<string>;
     static getNumberSetting(key: string, defaultValue?: number): Promise<number>;
-    static deleteKey(key: string): Promise<any>;
+    static deleteKey(key: string): Promise<void>;
     static getList<T>(key: string): Promise<T[]>;
     static pushToListWithPromise(key: string, item: any, addOnfirst: boolean): Promise<void>;
     static pushToList(key: string, item: any, addOnfirst: boolean, callback?: (isSuccess: boolean) => void): void;

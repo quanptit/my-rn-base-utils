@@ -1,0 +1,22 @@
+declare const _default: {
+    languageCode: any;
+    languageCodeSave: any;
+    lastModified(filePath: string): Promise<number>;
+    /**
+     * IOS: đọc file trong bundle
+     * Android: Đọc file trong Asset Folder
+     * */
+    readFileFromAssetFolder(fileSubPath: string, isDecrypt: boolean): Promise<string>;
+    saveIntPreference(key: String, value: Number): Promise<void>;
+    getStringSetting(): Promise<string>;
+    getLanguageCode(): string;
+    getLanguageCodeSave(): string;
+    loadCurrentLanguageCode(): Promise<string>;
+    updateCurrentLanguage(languageCode: string, callback?: (isSuccess: boolean) => void): void;
+    setVIPUser(): Promise<void>;
+    /**
+     * fileAssetPath: sub path, với android là thư mục asset
+     * */
+    playSoundAssetFile(fileAssetPath: string, volume?: number): any;
+};
+export default _default;
