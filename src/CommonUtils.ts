@@ -71,11 +71,11 @@ export class CommonUtils {
     }
 
     public static getScreenW() {
-        return this.getScreenDimension().widthS
+        return Dimensions.get('window').width;
     }
 
     public static getScreenH() {
-        return this.getScreenDimension().heightS
+        return Dimensions.get('window').height;
     }
 
     //endregion

@@ -61,10 +61,10 @@ export class CommonUtils {
         return { widthS: width, heightS: height };
     }
     static getScreenW() {
-        return this.getScreenDimension().widthS;
+        return Dimensions.get('window').width;
     }
     static getScreenH() {
-        return this.getScreenDimension().heightS;
+        return Dimensions.get('window').height;
     }
     //endregion
     //region Common LeftMenuUtils func ==========
