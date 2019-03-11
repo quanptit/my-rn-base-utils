@@ -3,6 +3,10 @@ import {Actions} from 'react-native-router-flux'
 import {isEqual as isEqualOld, clone, cloneDeep} from "lodash"
 import {PreferenceUtils} from "./PreferenceUtils";
 
+function isIOS() {
+    return Platform.OS === "ios";
+}
+
 export class CommonUtils {
     // region navigator function
     static initBackForAndroid(handleBack?: () => void) {
@@ -218,26 +222,9 @@ export class CommonUtils {
     }
 }
 
-export function isEmpty(str: string | [any] | any[]): boolean {
-    return str == undefined || str.length === 0
-}
-
 export const isEqual = isEqualOld;
-
-export function sendError(error: any) {
-    console.warn("============ ERROR ===========", error);
-    if (error) {
-        if (error.stack) {
-            console.warn(error.stack)
-        }
-    }
-}
 
 export async function isVipUser(): Promise<boolean> {
     let userObj = await PreferenceUtils.getObject("USER");
     return !!(userObj != null && userObj.isVip);
-}
-
-export function isIOS(): boolean {
-    return Platform.OS === "ios"
 }
