@@ -1,3 +1,4 @@
+export { initPrototype } from "./Prototype";
 export { default as RNAppUtils } from "./RNAppUtils";
 export { AnimateUtils } from "./AnimateUtils";
 export { CommonUtils } from "./CommonUtils";

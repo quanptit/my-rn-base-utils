@@ -1,4 +1,5 @@
 import {Platform} from 'react-native'
+export {initPrototype} from "./Prototype";
 export {default as  RNAppUtils} from "./RNAppUtils";
 export {AnimateUtils} from "./AnimateUtils";
 export {CommonUtils} from "./CommonUtils";
@@ -18,7 +19,6 @@ export interface IPathUtilsModule {
 }
 
 //region some function
-
 export function isEmpty(str: string | [any] | any[]): boolean {
     return str == undefined || str.length === 0
 }
