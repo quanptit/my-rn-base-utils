@@ -1,4 +1,5 @@
 export { initPrototype } from "./Prototype";
+export { isEmpty, isIOS, sendError } from "./CommonFunction";
 export { default as RNAppUtils } from "./RNAppUtils";
 export { AnimateUtils } from "./AnimateUtils";
 export { CommonUtils } from "./CommonUtils";
@@ -14,6 +15,3 @@ export interface IPathUtilsModule {
     getROOT(): string;
     getROOT_RESOURCE(): string;
 }
-export declare function isEmpty(str: string | [any] | any[]): boolean;
-export declare function sendError(error: any): void;
-export declare function isIOS(): boolean;

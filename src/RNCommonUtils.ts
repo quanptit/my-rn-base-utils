@@ -1,6 +1,6 @@
 import {NativeModules, Platform} from 'react-native'
 import {PreferenceUtils} from "./PreferenceUtils";
-import {isEmpty} from "./index";
+import {isEmpty} from "./CommonFunction";
 
 const RNCommonUtils = Platform.OS === "ios" ? NativeModules.RNCommonUtilsIOS : NativeModules.RNCommonUtilsAndroid;
 
