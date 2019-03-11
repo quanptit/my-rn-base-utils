@@ -1,9 +1,14 @@
 import {Platform} from 'react-native'
+
+export {AnimateUtils} from "./AnimateUtils";
+export {CommonUtils} from "./CommonUtils";
+export {DataTypeUtils} from "./DataTypeUtils";
 export {default as RNCommonUtils} from "./RNCommonUtils";
 export {default as FileUtils} from "./FileUtils";
 export {PreferenceUtils} from "./PreferenceUtils";
 export {SecurityUtils} from "./SecurityUtils";
 export {default as NetworkUtils} from "./NetworkUtils";
+
 
 //region some function
 
