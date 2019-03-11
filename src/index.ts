@@ -9,6 +9,14 @@ export {PreferenceUtils} from "./PreferenceUtils";
 export {SecurityUtils} from "./SecurityUtils";
 export {default as NetworkUtils} from "./NetworkUtils";
 
+export interface IPathUtilsModule {
+    getPathOnline(subPath: string): string;
+
+    getPathOnlineOrOffline(subPath: string, alwayGetOnline?: boolean): Promise<string>
+    getROOT():string
+    getROOT_RESOURCE():string
+}
+
 //region some function
 
 export function isEmpty(str: string | [any] | any[]): boolean {
