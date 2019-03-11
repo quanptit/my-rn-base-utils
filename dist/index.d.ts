@@ -1,3 +1,4 @@
+export { default as RNAppUtils } from "./RNAppUtils";
 export { AnimateUtils } from "./AnimateUtils";
 export { CommonUtils } from "./CommonUtils";
 export { DataTypeUtils } from "./DataTypeUtils";

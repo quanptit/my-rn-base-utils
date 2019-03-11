@@ -10,4 +10,5 @@ All project sẽ tham chiếu đến
 Chạy  lệnh sau
 ```
 npm install
+react-native link my-rn-base-utils
 ```
