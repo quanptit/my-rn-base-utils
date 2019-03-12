@@ -1,6 +1,8 @@
 import RNFetchBlob from 'rn-fetch-blob'
 import FileUtils from './FileUtils'
 import {SecurityUtils} from "./SecurityUtils";
+import {PreferenceUtils} from "./PreferenceUtils";
+import {DataTypeUtils} from "./DataTypeUtils";
 
 export default class NetworkUtils {
 
@@ -12,20 +14,32 @@ export default class NetworkUtils {
     }
 
     /**
+     * mặc định sẽ cache và lấy ở local cho lần 2 nếu đã cache
+     * timeSecondCache: vd 3 day = 3*24*60*60
      * Chú ý là async function
      * Return Promise: <String> là nội dung của file ở URL
      * */
-    static async getStringFromUrl(url: string, isOnlyGetOnline?: boolean)
+    static async getStringFromUrlAndCache(url: string, isOnlyGetOnline: boolean = false,
+                                  cacheSetting: { dir: string, timeSecondCache?: number } = {dir: RNFetchBlob.fs.dirs.DocumentDir})
         : Promise<{ isFromOnline?: boolean, responseStr?: string }> {
-        let filePathCache = RNFetchBlob.fs.dirs.DocumentDir + "/" + url.hashCode();
-        let isFromOnline;
-        let responseStr: string;
-        if (isOnlyGetOnline || !await FileUtils.exists(filePathCache)) {
-            responseStr = await this.excuteHttpGetString(url);
-            isFromOnline = true;
-        } else
-            responseStr = await FileUtils.readFile(filePathCache);
-        return {isFromOnline: isFromOnline, responseStr: responseStr}
+        let isGetFromOffline = false;
+        let hashCode = url.hashCode();
+        let filePathCache = cacheSetting.dir + "/" + hashCode;
+        let isFileCacheExits = false;
+        if (!isOnlyGetOnline) {
+            isFileCacheExits = await FileUtils.exists(filePathCache);
+            let timeSecondCache = cacheSetting.timeSecondCache;
+            if (timeSecondCache != null && timeSecondCache > 0) {
+                let lastSecondCache = await PreferenceUtils.getNumberSetting(String(hashCode), 0);
+                if (DataTypeUtils.getCurrentTimeSeconds() - lastSecondCache > timeSecondCache)
+                    isGetFromOffline = isFileCacheExits;
+            } else
+                isGetFromOffline = isFileCacheExits;
+            if (isGetFromOffline) {
+                return {isFromOnline: false, responseStr: await FileUtils.readFile(filePathCache)};
+            }
+        }
+        return {isFromOnline: true, responseStr: await this.excuteHttpGetString(url)};
     }
 
     /**
@@ -71,9 +85,8 @@ export default class NetworkUtils {
         if (response.ok) {
             console.log("excuteHttpGetString Success", url);
             return response.text();
-        }
-        else
-            throw new Error("excuteHttpGetString Error Status: "  + response.status)
+        } else
+            throw new Error("excuteHttpGetString Error Status: " + response.status)
     }
 }
 

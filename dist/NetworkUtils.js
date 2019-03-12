@@ -1,6 +1,8 @@
 import RNFetchBlob from 'rn-fetch-blob';
 import FileUtils from './FileUtils';
 import { SecurityUtils } from "./SecurityUtils";
+import { PreferenceUtils } from "./PreferenceUtils";
+import { DataTypeUtils } from "./DataTypeUtils";
 export default class NetworkUtils {
     static saveCacheFile(url, response, callback) {
         let filePathCache = RNFetchBlob.fs.dirs.DocumentDir + "/" + url.hashCode();
@@ -9,20 +11,31 @@ export default class NetworkUtils {
             .catch(() => callback && callback(false));
     }
     /**
+     * mặc định sẽ cache và lấy ở local cho lần 2 nếu đã cache
+     * timeSecondCache: vd 3 day = 3*24*60*60
      * Chú ý là async function
      * Return Promise: <String> là nội dung của file ở URL
      * */
-    static async getStringFromUrl(url, isOnlyGetOnline) {
-        let filePathCache = RNFetchBlob.fs.dirs.DocumentDir + "/" + url.hashCode();
-        let isFromOnline;
-        let responseStr;
-        if (isOnlyGetOnline || !await FileUtils.exists(filePathCache)) {
-            responseStr = await this.excuteHttpGetString(url);
-            isFromOnline = true;
+    static async getStringFromUrlAndCache(url, isOnlyGetOnline = false, cacheSetting = { dir: RNFetchBlob.fs.dirs.DocumentDir }) {
+        let isGetFromOffline = false;
+        let hashCode = url.hashCode();
+        let filePathCache = cacheSetting.dir + "/" + hashCode;
+        let isFileCacheExits = false;
+        if (!isOnlyGetOnline) {
+            isFileCacheExits = await FileUtils.exists(filePathCache);
+            let timeSecondCache = cacheSetting.timeSecondCache;
+            if (timeSecondCache != null && timeSecondCache > 0) {
+                let lastSecondCache = await PreferenceUtils.getNumberSetting(String(hashCode), 0);
+                if (DataTypeUtils.getCurrentTimeSeconds() - lastSecondCache > timeSecondCache)
+                    isGetFromOffline = isFileCacheExits;
+            }
+            else
+                isGetFromOffline = isFileCacheExits;
+            if (isGetFromOffline) {
+                return { isFromOnline: false, responseStr: await FileUtils.readFile(filePathCache) };
+            }
         }
-        else
-            responseStr = await FileUtils.readFile(filePathCache);
-        return { isFromOnline: isFromOnline, responseStr: responseStr };
+        return { isFromOnline: true, responseStr: await this.excuteHttpGetString(url) };
     }
     /**
      * method: GET | POST
