@@ -42,5 +42,4 @@ export declare class CommonUtils {
     /**Neu Timeout => reject is called*/
     static excuteFuncWithTimeOut(func: () => Promise<any>, miliSeconds: number): Promise<any>;
 }
-export declare const isEqual: any;
 export declare function isVipUser(): Promise<boolean>;

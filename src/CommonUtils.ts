@@ -1,6 +1,6 @@
 import {BackHandler, Dimensions, InteractionManager, Linking, Platform, StatusBar} from 'react-native'
 import {Actions} from 'react-native-router-flux'
-import {isEqual as isEqualOld, clone, cloneDeep} from "lodash"
+import {clone, cloneDeep} from "lodash"
 import {PreferenceUtils} from "./PreferenceUtils";
 
 function isIOS() {
@@ -221,8 +221,6 @@ export class CommonUtils {
         })
     }
 }
-
-export const isEqual = isEqualOld;
 
 export async function isVipUser(): Promise<boolean> {
     let userObj = await PreferenceUtils.getObject("USER");
