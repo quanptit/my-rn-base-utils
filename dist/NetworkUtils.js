@@ -3,6 +3,7 @@ import FileUtils from './FileUtils';
 import { SecurityUtils } from "./SecurityUtils";
 import { PreferenceUtils } from "./PreferenceUtils";
 import { DataTypeUtils } from "./DataTypeUtils";
+import { isEmpty } from "./CommonFunction";
 export default class NetworkUtils {
     static saveCacheFile(url, response, callback) {
         let filePathCache = RNFetchBlob.fs.dirs.DocumentDir + "/" + url.hashCode();
@@ -34,6 +35,10 @@ export default class NetworkUtils {
             if (isGetFromOffline) {
                 return { isFromOnline: false, responseStr: await FileUtils.readFile(filePathCache) };
             }
+        }
+        let responseStr = await this.excuteHttpGetString(url);
+        if (!isEmpty(responseStr)) { // noinspection JSIgnoredPromiseFromCall
+            FileUtils.writeFile(filePathCache, responseStr);
         }
         return { isFromOnline: true, responseStr: await this.excuteHttpGetString(url) };
     }

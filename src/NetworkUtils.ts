@@ -3,6 +3,7 @@ import FileUtils from './FileUtils'
 import {SecurityUtils} from "./SecurityUtils";
 import {PreferenceUtils} from "./PreferenceUtils";
 import {DataTypeUtils} from "./DataTypeUtils";
+import {isEmpty} from "./CommonFunction";
 
 export default class NetworkUtils {
 
@@ -20,7 +21,7 @@ export default class NetworkUtils {
      * Return Promise: <String> là nội dung của file ở URL
      * */
     static async getStringFromUrlAndCache(url: string, isOnlyGetOnline: boolean = false,
-                                  cacheSetting: { dir: string, timeSecondCache?: number } = {dir: RNFetchBlob.fs.dirs.DocumentDir})
+                                          cacheSetting: { dir: string, timeSecondCache?: number } = {dir: RNFetchBlob.fs.dirs.DocumentDir})
         : Promise<{ isFromOnline?: boolean, responseStr?: string }> {
         let isGetFromOffline = false;
         let hashCode = url.hashCode();
@@ -38,6 +39,10 @@ export default class NetworkUtils {
             if (isGetFromOffline) {
                 return {isFromOnline: false, responseStr: await FileUtils.readFile(filePathCache)};
             }
+        }
+        let responseStr = await this.excuteHttpGetString(url);
+        if (!isEmpty(responseStr)) { // noinspection JSIgnoredPromiseFromCall
+            FileUtils.writeFile(filePathCache, responseStr);
         }
         return {isFromOnline: true, responseStr: await this.excuteHttpGetString(url)};
     }
