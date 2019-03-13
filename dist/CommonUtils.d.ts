@@ -35,6 +35,7 @@ export declare class CommonUtils {
     static cloneDeep<T>(value: T): T;
     static nextFrame(): Promise<void>;
     static runAfterInteractions(doFunc: any, isSkipTimeout?: boolean): void;
+    static setState(component: any, state: any): Promise<void>;
     static requestAnimationFrameWithPromise(): Promise<void>;
     static waitAfterInteractions(isSkipTimeout?: boolean): Promise<{}>;
     static wait(timeMili: any): Promise<void>;

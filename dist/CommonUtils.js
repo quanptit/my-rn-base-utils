@@ -128,6 +128,11 @@ export class CommonUtils {
         });
     }
     //endregion
+    static setState(component, state) {
+        return new Promise(function (resolve, reject) {
+            component.setState(state, () => resolve());
+        });
+    }
     static requestAnimationFrameWithPromise() {
         return new Promise(function (resolve, reject) {
             requestAnimationFrame(() => {

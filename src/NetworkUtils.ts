@@ -44,7 +44,7 @@ export default class NetworkUtils {
         if (!isEmpty(responseStr)) { // noinspection JSIgnoredPromiseFromCall
             FileUtils.writeFile(filePathCache, responseStr);
         }
-        return {isFromOnline: true, responseStr: await this.excuteHttpGetString(url)};
+        return {isFromOnline: true, responseStr: responseStr};
     }
 
     /**

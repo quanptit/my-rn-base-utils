@@ -1,4 +1,4 @@
-import {BackHandler, Dimensions, InteractionManager, Linking, Platform, StatusBar} from 'react-native'
+import {Animated, BackHandler, Dimensions, InteractionManager, Linking, Platform, StatusBar} from 'react-native'
 import {Actions} from 'react-native-router-flux'
 import {clone, cloneDeep} from "lodash"
 import {PreferenceUtils} from "./PreferenceUtils";
@@ -80,7 +80,6 @@ export class CommonUtils {
 
     //endregion
 
-
     //region Common LeftMenuUtils func ==========
     public static openAppPage(isIOSPage, iosId: string, androidID: string) {
         if (isIOSPage)
@@ -147,6 +146,12 @@ export class CommonUtils {
     }
 
     //endregion
+
+    static setState(component, state): Promise<void> {
+        return new Promise(function (resolve, reject) {
+            component.setState(state, () => resolve());
+        });
+    }
 
     static requestAnimationFrameWithPromise(): Promise<void> {
         return new Promise(function (resolve, reject) {
