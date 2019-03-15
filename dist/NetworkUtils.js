@@ -20,7 +20,7 @@ export default class NetworkUtils {
     static async getStringFromUrlAndCache(url, isOnlyGetOnline = false, cacheSetting = { dir: RNFetchBlob.fs.dirs.DocumentDir }) {
         let isGetFromOffline = false;
         let hashCode = url.hashCode();
-        let filePathCache = cacheSetting.dir + "/" + hashCode;
+        let filePathCache = cacheSetting.dir + "/" + (cacheSetting.fileName ? cacheSetting.fileName : hashCode);
         let isFileCacheExits = false;
         if (!isOnlyGetOnline) {
             isFileCacheExits = await FileUtils.exists(filePathCache);

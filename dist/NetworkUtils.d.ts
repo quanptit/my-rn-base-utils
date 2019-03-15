@@ -8,6 +8,7 @@ export default class NetworkUtils {
      * */
     static getStringFromUrlAndCache(url: string, isOnlyGetOnline?: boolean, cacheSetting?: {
         dir: string;
+        fileName?: string;
         timeSecondCache?: number;
     }): Promise<{
         isFromOnline?: boolean;

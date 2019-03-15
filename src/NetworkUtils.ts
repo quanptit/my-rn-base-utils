@@ -21,11 +21,11 @@ export default class NetworkUtils {
      * Return Promise: <String> là nội dung của file ở URL
      * */
     static async getStringFromUrlAndCache(url: string, isOnlyGetOnline: boolean = false,
-                                          cacheSetting: { dir: string, timeSecondCache?: number } = {dir: RNFetchBlob.fs.dirs.DocumentDir})
+                                          cacheSetting: { dir: string, fileName?: string, timeSecondCache?: number } = {dir: RNFetchBlob.fs.dirs.DocumentDir})
         : Promise<{ isFromOnline?: boolean, responseStr?: string }> {
         let isGetFromOffline = false;
         let hashCode = url.hashCode();
-        let filePathCache = cacheSetting.dir + "/" + hashCode;
+        let filePathCache = cacheSetting.dir + "/" + (cacheSetting.fileName ? cacheSetting.fileName : hashCode);
         let isFileCacheExits = false;
         if (!isOnlyGetOnline) {
             isFileCacheExits = await FileUtils.exists(filePathCache);
