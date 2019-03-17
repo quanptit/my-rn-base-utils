@@ -53,6 +53,9 @@ export default {
     setVIPUser() {
         return RNCommonUtils.setVIPUser();
     },
+    getAppName() {
+        return RNCommonUtils.getAppName();
+    },
     /**
      * fileAssetPath: sub path, với android là thư mục asset
      * */

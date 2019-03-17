@@ -196,6 +196,13 @@ public class RNCommonUtilsModule extends ReactContextBaseJavaModule {
         }
     }
 
+    @ReactMethod
+    public void getAppName(Promise promise) {
+        Context context = getReactApplicationContext();
+        String value = context.getApplicationInfo().loadLabel(context.getPackageManager()).toString();
+        promise.resolve(value);
+    }
+
     // region method phục vụ cho việc update =====
     // promise là int value
     @ReactMethod

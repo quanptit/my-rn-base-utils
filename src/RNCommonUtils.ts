@@ -62,6 +62,9 @@ export default {
     setVIPUser(): Promise<void> {
         return RNCommonUtils.setVIPUser()
     },
+    getAppName(): Promise<string> {
+        return RNCommonUtils.getAppName()
+    },
     /**
      * fileAssetPath: sub path, với android là thư mục asset
      * */
