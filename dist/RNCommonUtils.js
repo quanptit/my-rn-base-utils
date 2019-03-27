@@ -53,6 +53,9 @@ export default {
     setVIPUser() {
         return RNCommonUtils.setVIPUser();
     },
+    isVIPUser() {
+        return RNCommonUtils.isVIPUser();
+    },
     getAppName() {
         return RNCommonUtils.getAppName();
     },

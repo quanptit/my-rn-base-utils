@@ -14,6 +14,7 @@ declare const _default: {
     loadCurrentLanguageCode(): Promise<string>;
     updateCurrentLanguage(languageCode: string, callback?: (isSuccess: boolean) => void): void;
     setVIPUser(): Promise<void>;
+    isVIPUser(): Promise<boolean>;
     getAppName(): Promise<string>;
     /**
      * fileAssetPath: sub path, với android là thư mục asset

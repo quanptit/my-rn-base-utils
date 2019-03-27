@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39767e11-7543-4f16-ba12-0eab2640477a" name="Default Changelist" comment="">
+    <list default="true" id="39767e11-7543-4f16-ba12-0eab2640477a" name="Default Changelist" comment="first init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/my-rn-base-utils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/android/my-rn-base-utils.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/generalUtils/modules/RNCommonUtilsModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/generalUtils/modules/RNCommonUtilsModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/RNCommonUtils.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/RNCommonUtils.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/RNCommonUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/RNCommonUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CommonUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/CommonUtils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RNCommonUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/RNCommonUtils.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,24 +16,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/RNCommonUtils.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="831">
-              <caret line="65" column="37" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CommonUtils.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="980">
-              <caret line="171" column="31" selection-start-line="171" selection-start-column="31" selection-end-line="171" selection-end-column="31" />
+            <state relative-caret-position="729">
+              <caret line="227" column="1" selection-start-line="227" selection-start-column="1" selection-end-line="227" selection-end-column="1" />
               <folding>
                 <element signature="n#!!block;n#getStatusBarHeight#0;n#CommonUtils#0" />
               </folding>
@@ -46,42 +30,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.ts">
+        <entry file="file://$PROJECT_DIR$/src/RNCommonUtils.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RNAppUtils.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FileUtils.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="756">
+              <caret line="66" column="6" lean-forward="true" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NetworkUtils.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#0#52#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,9 +105,9 @@
         <option value="$PROJECT_DIR$/src/FileUtils.ts" />
         <option value="$PROJECT_DIR$/src/CommonFunction.ts" />
         <option value="$PROJECT_DIR$/src/index.ts" />
-        <option value="$PROJECT_DIR$/src/CommonUtils.ts" />
         <option value="$PROJECT_DIR$/src/NetworkUtils.ts" />
         <option value="$PROJECT_DIR$/src/RNCommonUtils.ts" />
+        <option value="$PROJECT_DIR$/src/CommonUtils.ts" />
       </list>
     </option>
   </component>
@@ -333,7 +287,8 @@
       <workItem from="1552491628939" duration="23000" />
       <workItem from="1552575695965" duration="189000" />
       <workItem from="1552615931219" duration="395000" />
-      <workItem from="1552795396634" duration="1678000" />
+      <workItem from="1552795396634" duration="1740000" />
+      <workItem from="1553678692201" duration="372000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1551059137537</created>
@@ -489,11 +444,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552616312925</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="first init">
+      <created>1552803550715</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1552803550715</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23972000" />
+    <option name="totallyTimeSpent" value="24406000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -504,7 +466,7 @@
       <window_info id="npm" order="2" sideWeight="0.5015528" side_tool="true" weight="0.24973656" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3299075" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3298647" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -512,7 +474,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TypeScript" order="9" visible="true" weight="0.1253854" />
+      <window_info anchor="bottom" id="TypeScript" order="9" weight="0.1253854" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.23535457" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -630,16 +592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CommonUtils.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="171" column="31" selection-start-line="171" selection-start-column="31" selection-end-line="171" selection-end-column="31" />
-          <folding>
-            <element signature="n#!!block;n#getStatusBarHeight#0;n#CommonUtils#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -676,10 +628,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RNCommonUtils.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="831">
-          <caret line="65" column="37" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
+        <state relative-caret-position="756">
+          <caret line="66" column="6" lean-forward="true" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CommonUtils.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="227" column="1" selection-start-line="227" selection-start-column="1" selection-end-line="227" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!block;n#getStatusBarHeight#0;n#CommonUtils#0" />
           </folding>
         </state>
       </provider>

@@ -226,8 +226,3 @@ export class CommonUtils {
         })
     }
 }
-
-export async function isVipUser(): Promise<boolean> {
-    let userObj = await PreferenceUtils.getObject("USER");
-    return !!(userObj != null && userObj.isVip);
-}

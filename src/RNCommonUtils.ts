@@ -62,6 +62,9 @@ export default {
     setVIPUser(): Promise<void> {
         return RNCommonUtils.setVIPUser()
     },
+    isVIPUser(): Promise<boolean> {
+        return RNCommonUtils.isVIPUser()
+    },
     getAppName(): Promise<string> {
         return RNCommonUtils.getAppName()
     },
