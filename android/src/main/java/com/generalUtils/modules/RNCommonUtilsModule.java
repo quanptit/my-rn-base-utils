@@ -164,6 +164,11 @@ public class RNCommonUtilsModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
+    public void isVIPUser(Promise promise) {
+        promise.resolve(PreferenceUtils.getBooleanSetting("IS_VIP", false));
+    }
+
+    @ReactMethod
     public void saveIntPreference(String key, int value) {
         PreferenceUtils.saveIntSetting(key, value);
     }

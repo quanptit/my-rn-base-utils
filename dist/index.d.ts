@@ -1,3 +1,4 @@
+export { TaskQueue } from "./TaskQueue";
 export { initPrototype } from "./Prototype";
 export { isEmpty, isIOS, sendError } from "./CommonFunction";
 export { default as RNAppUtils } from "./RNAppUtils";
@@ -9,6 +10,7 @@ export { default as FileUtils } from "./FileUtils";
 export { PreferenceUtils } from "./PreferenceUtils";
 export { SecurityUtils } from "./SecurityUtils";
 export { default as NetworkUtils } from "./NetworkUtils";
+export * from './Objs';
 export interface IPathUtilsModule {
     getPathOnline(subPath: string): string;
     getPathOnlineOrOffline(subPath: string, alwayGetOnline?: boolean): Promise<string>;
