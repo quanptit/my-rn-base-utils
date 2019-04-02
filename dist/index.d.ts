@@ -16,4 +16,5 @@ export interface IPathUtilsModule {
     getPathOnlineOrOffline(subPath: string, alwayGetOnline?: boolean): Promise<string>;
     getROOT(): string;
     getROOT_RESOURCE(): string;
+    getCachedDownloadDir(): string;
 }
