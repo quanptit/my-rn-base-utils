@@ -13,7 +13,10 @@
   "author": "Quan Trinh Van",
   "license": "Quan Trinh Van",
   "nativePackage": true,
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "rn-fetch-blob": "^0.10.13"
+  },
   "devDependencies": {
   },
   "peerDependencies": {}
