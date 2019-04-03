@@ -14,10 +14,11 @@
   "license": "Quan Trinh Van",
   "nativePackage": true,
   "dependencies": {
-    "lodash": "^4.17.11",
-    "rn-fetch-blob": "^0.10.13"
+    "lodash": "^4.17.11"
   },
   "devDependencies": {
   },
-  "peerDependencies": {}
+  "peerDependencies": {
+    "rn-fetch-blob": "^0.10.13"
+  }
 }
