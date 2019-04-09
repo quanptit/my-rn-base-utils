@@ -24,6 +24,7 @@ export interface User {
 export interface BhDetailBase {
     isShowQuestionNotInList?: boolean;
     audio?: string,
+    img?: string,
     pdfPathLesson?: string,
     isShowTranslateButton?: boolean,
     isWriting?: boolean,
