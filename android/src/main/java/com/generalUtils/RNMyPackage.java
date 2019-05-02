@@ -5,6 +5,7 @@ import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 import com.generalUtils.modules.RNCommonUtilsModule;
+import com.generalUtils.modules.RNRequestPermisionModule;
 import com.generalUtils.modules.Toast;
 
 import java.util.ArrayList;
@@ -18,6 +19,7 @@ public class RNMyPackage implements ReactPackage {
         List<NativeModule> modules = new ArrayList<>();
         modules.add(new RNCommonUtilsModule(context));
         modules.add(new Toast(context));
+        modules.add(new RNRequestPermisionModule(context));
         return modules;
     }
 

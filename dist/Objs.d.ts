@@ -113,6 +113,7 @@ export interface Sentence {
     isEnableTranslate?: boolean;
     userSpeaking?: boolean;
     userSpeakingValue?: string;
+    isUserAnswerCorrect?: boolean;
 }
 export interface GroupQuestion {
     itemOfPartDetails: ItemOfPartDetailBase[];

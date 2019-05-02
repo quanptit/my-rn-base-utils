@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="close_x">Close(x)</string>
+    <string name="permission_denied_audio">Recording permission is denied</string>
+    <string name="enable_permission_audio">ALLOW RECORDING</string>
+    <string name="enable_permission_audio_mesg">Please allow the recording application to check that you pronounce correctly or wrongly.
+         \nPress "ALLOW RECORDING" and AGREE / ALLOW
+         \n\nOr
+         \n1. Under Settings, select Permissions
+         \n2. Turn on the Microphone</string>
+    <string name="enable_permission_audio_ghi_am">Please allow the recording application to perform this function.
+         \nPress "ALLOW RECORDING" and AGREE / ALLOW
+         \n \nOr
+         \n1. Under Settings, select Permissions
+         \n2. Turn on the Microphone</string>
+    <string name="permision_record_audio_explan">We need your permission to record, in order to perform this function</string>
+</resources>
