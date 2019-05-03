@@ -85,7 +85,8 @@ export default class NetworkUtils {
             return response.text();
         }
         else
-            throw new Error("excuteHttpGetString Error Status: " + response.status);
+            console.error("excuteHttpGetString Error", url);
+        throw new Error("excuteHttpGetString Error Status: " + response.status);
     }
 }
 function decryptString(source) {
