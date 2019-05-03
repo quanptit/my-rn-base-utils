@@ -85,7 +85,7 @@ export default class NetworkUtils {
             return response.text();
         }
         else
-            console.error("excuteHttpGetString Error", url);
+            console.warn("excuteHttpGetString Error", url);
         throw new Error("excuteHttpGetString Error Status: " + response.status);
     }
 }
