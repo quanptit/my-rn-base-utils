@@ -30,7 +30,7 @@ export class CommonUtils {
     /**
      * type: replace => remove hết những sene trước đó. reset => remove sene hiện tại
      * */
-    public static openScreen(screenName: string, props?: any, type?: "reset" | "replace") {
+    public static openScreen<T>(screenName: string, props?: T | any, type?: "reset" | "replace") {
         if (type != undefined) {
             if (props == undefined) {
                 props = {"type": type}
