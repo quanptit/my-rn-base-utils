@@ -5,7 +5,7 @@ export declare class CommonUtils {
     /**
      * type: replace => remove hết những sene trước đó. reset => remove sene hiện tại
      * */
-    static openScreen<T>(screenName: string, props?: T | any, type?: "reset" | "replace"): void;
+    static openScreen<T>(screenName: string, props?: T, type?: "reset" | "replace"): void;
     static getStatusBarHeight(skipAndroid?: boolean): number;
     static getScreenDimension(): {
         widthS: number;

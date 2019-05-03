@@ -29,9 +29,11 @@ export class CommonUtils {
     static openScreen(screenName, props, type) {
         if (type != undefined) {
             if (props == undefined) {
+                // @ts-ignore
                 props = { "type": type };
             }
             else
+                // @ts-ignore
                 props.type = type;
         }
         Actions[screenName](props);
