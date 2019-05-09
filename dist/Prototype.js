@@ -23,6 +23,10 @@ export function initPrototype() {
         let str = this;
         return str.replace(new RegExp(find.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'), 'g'), replace);
     };
+    String.prototype.toUpperCaseFirstLetter = function () {
+        let str = this;
+        return str.charAt(0).toUpperCase() + str.slice(1);
+    };
     //endregion
     //region array prototypes
     Array.prototype.insert = function (index, item) {

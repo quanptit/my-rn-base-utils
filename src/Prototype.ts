@@ -1,9 +1,10 @@
-
 declare global {
     interface String {
         hashCode(): number
 
         format(...args): string
+
+        toUpperCaseFirstLetter(): string
 
         replaceAll(find: string, replace: string): string
     }
@@ -40,6 +41,10 @@ export function initPrototype() {
     String.prototype.replaceAll = function (find: string, replace: string) {
         let str = this;
         return str.replace(new RegExp(find.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'), 'g'), replace)
+    };
+    String.prototype.toUpperCaseFirstLetter = function () {
+        let str = this;
+        return str.charAt(0).toUpperCase() + str.slice(1);
     };
 
 //endregion
