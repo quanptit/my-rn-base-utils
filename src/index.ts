@@ -1,3 +1,4 @@
+export {AppUserDataUtils} from "./AppUserDataUtils";
 export {TaskQueue} from "./TaskQueue";
 export {initPrototype} from "./Prototype";
 export {isEmpty, isIOS, sendError} from "./CommonFunction";

@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="39767e11-7543-4f16-ba12-0eab2640477a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NetworkUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/NetworkUtils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/my-rn-base-utils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/android/my-rn-base-utils.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/generalUtils/commonUtils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/generalUtils/commonUtils/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,7 +30,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CommonUtils.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
+            <state relative-caret-position="1064">
               <caret line="43" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="e#0#112#0" expanded="true" />
@@ -38,14 +40,44 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NetworkUtils.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="93" column="25" lean-forward="true" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
+            <state relative-caret-position="1904">
+              <caret line="81" selection-start-line="81" selection-end-line="81" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Prototype.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppUserDataUtils.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-181">
+              <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -114,20 +146,21 @@
         <option value="$PROJECT_DIR$/src/Row.tsx" />
         <option value="$PROJECT_DIR$/src/Touchable.tsx" />
         <option value="$PROJECT_DIR$/src/Toast.ts" />
-        <option value="$PROJECT_DIR$/src/Prototype.ts" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/src/DataTypeUtils.ts" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/IPathUtilsModule.ts" />
         <option value="$PROJECT_DIR$/src/FileUtils.ts" />
         <option value="$PROJECT_DIR$/src/RNCommonUtils.ts" />
-        <option value="$PROJECT_DIR$/src/index.ts" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/CommonFunction.ts" />
         <option value="$PROJECT_DIR$/dist/Objs.d.ts" />
         <option value="$PROJECT_DIR$/src/Objs.ts" />
         <option value="$PROJECT_DIR$/src/CommonUtils.ts" />
         <option value="$PROJECT_DIR$/src/NetworkUtils.ts" />
+        <option value="$PROJECT_DIR$/src/Prototype.ts" />
+        <option value="$PROJECT_DIR$/src/AppUserDataUtils.ts" />
+        <option value="$PROJECT_DIR$/src/index.ts" />
       </list>
     </option>
   </component>
@@ -182,7 +215,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,23 +225,13 @@
             <path>
               <item name="my-rn-base-utils" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-rn-base-utils" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-rn-base-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-rn-base-utils" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@types" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-rn-base-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-rn-base-utils" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -222,7 +244,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-native-login" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -235,16 +257,16 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2018.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="S:\Codes\react-native-my-libs\my-rn-base-utils\src" />
+      <recent name="S:\Codes\react-native-my-libs\my-rn-base-component\src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="S:\Codes\react-native-my-libs\my-rn-base-utils\src" />
       <recent name="S:\Codes\react-native-my-libs\my-rn-base-component\src" />
       <recent name="S:\Codes\react-native-my-libs\my-rn-base-component\src\base" />
       <recent name="S:\Codes\react-native-my-libs\my-rn-base-component\base" />
       <recent name="S:\Codes\react-native-my-libs\my-rn-ads" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="S:\Codes\react-native-my-libs\my-rn-base-utils\src" />
-      <recent name="S:\Codes\react-native-my-libs\my-rn-base-component\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -326,7 +348,9 @@
       <workItem from="1556612363030" duration="191000" />
       <workItem from="1556785331977" duration="747000" />
       <workItem from="1556845952946" duration="126000" />
-      <workItem from="1556846166679" duration="847000" />
+      <workItem from="1556846166679" duration="1460000" />
+      <workItem from="1557367757401" duration="40000" />
+      <workItem from="1557447886134" duration="169000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1551059137537</created>
@@ -566,17 +590,31 @@
       <option name="project" value="LOCAL" />
       <updated>1556848818427</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="first init">
+      <created>1556848924369</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1556848924369</updated>
+    </task>
+    <task id="LOCAL-00036" summary="first init">
+      <created>1557367786270</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1557367786271</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43630000" />
+    <option name="totallyTimeSpent" value="44452000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984472" visible="true" weight="0.24973656" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984472" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.5015528" side_tool="true" weight="0.24973656" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -589,7 +627,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="TypeScript" order="9" visible="true" weight="0.19732785" />
+      <window_info anchor="bottom" id="TypeScript" order="9" weight="0.19732785" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.23535457" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -652,13 +690,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IPathUtilsModule.ts" />
-    <entry file="file://$PROJECT_DIR$/src/Prototype.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DataTypeUtils.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2375">
@@ -731,13 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
@@ -768,7 +792,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CommonUtils.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
+        <state relative-caret-position="1064">
           <caret line="43" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="e#0#112#0" expanded="true" />
@@ -779,11 +803,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NetworkUtils.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="93" column="25" lean-forward="true" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
+        <state relative-caret-position="1904">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Prototype.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppUserDataUtils.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-181">
+          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>

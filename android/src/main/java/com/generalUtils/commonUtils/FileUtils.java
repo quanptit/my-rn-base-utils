@@ -5,18 +5,58 @@ import android.content.res.AssetManager;
 import android.text.TextUtils;
 import com.baseLibs.BaseApplication;
 
-import java.io.BufferedReader;
-import java.io.DataInputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.Reader;
-import java.io.StringWriter;
-import java.io.Writer;
+import java.io.*;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipInputStream;
 
 public class FileUtils {
+    /**
+     * Extract Here
+     *
+     * @return
+     */
+    public static boolean unpackZip(String dir, String zipFileName, boolean isDeleteFileZipAfterComplete) {
+        InputStream is;
+        ZipInputStream zis;
+        try {
+            String filename;
+            is = new FileInputStream(new File(dir, zipFileName));
+            zis = new ZipInputStream(new BufferedInputStream(is));
+            ZipEntry ze;
+            byte[] buffer = new byte[1024];
+            int count;
+
+            while ((ze = zis.getNextEntry()) != null) {
+                // zapis do souboru
+                filename = ze.getName();
+
+                if (ze.isDirectory()) {
+                    File fmd = new File(dir, filename);
+                    fmd.mkdirs();
+                    continue;
+                }
+
+                FileOutputStream fout = new FileOutputStream(new File(dir, filename));
+                // cteni zipu a zapis
+                while ((count = zis.read(buffer)) != -1) {
+                    fout.write(buffer, 0, count);
+                }
+                fout.close();
+                zis.closeEntry();
+            }
+
+            zis.close();
+            if (isDeleteFileZipAfterComplete) {
+                new File(dir, zipFileName).delete();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+
+        return true;
+    }
+
     public static String readAcessFile(String filePath, boolean isDecrypt) throws Exception {
         if (isDecrypt) {
             Encryption encryption = Encryption.getInstance();
@@ -61,7 +101,7 @@ public class FileUtils {
     public static void copyAssetFolderToSdCard(String assetFolderPath, String sdcardFolder) throws Exception {
         AssetManager assetManager = BaseApplication.getAppContext().getAssets();
         String assets[] = null;
-        assets = assetManager.list(assetFolderPath) ;
+        assets = assetManager.list(assetFolderPath);
         if (assets.length == 0) {
             copyAssetFileToSdCard(assetFolderPath, sdcardFolder);
         } else {
