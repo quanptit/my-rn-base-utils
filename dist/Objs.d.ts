@@ -123,3 +123,34 @@ export interface GroupQuestion {
     type: string;
     stt: number;
 }
+export interface MenuItem {
+    url_appstore?: string;
+    url_schemes?: string;
+    id?: any;
+    iconName?: string;
+    imageSource?: any;
+    imageSourceActive?: any;
+    title?: string;
+    display?: string;
+    packageName?: string;
+    isSeleced?: boolean;
+    level?: number;
+    key?: string;
+    isLocal?: boolean;
+    isDecrypt?: boolean;
+    noDownload?: boolean;
+    isVoca?: boolean;
+    isReload?: boolean;
+    isAddCurrentNextLessonRow?: boolean;
+    isAddCompleteTab?: boolean;
+    isSelectedDefault?: boolean;
+    type?: string;
+    data?: any;
+    isMaterialIcons?: boolean;
+    isVideo?: boolean;
+}
+export interface Session {
+    session?: string;
+    isTopSession?: boolean;
+    isSession?: boolean;
+}

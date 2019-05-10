@@ -1,4 +1,3 @@
-
 export interface ItemOfPartDetailBase {
     type?: string,
     content?: string,
@@ -34,7 +33,7 @@ export interface BhDetailBase {
     listItemBaiTap?: (any)[], // show bài tập dạng list
     listItemBaiGiang?: (ItemOfPartDetailBase)[], // show bài giảng
     // vocabularyObjs?: VocabularyObj[]
-    groupQuestions?:GroupQuestion[]
+    groupQuestions?: GroupQuestion[]
 }
 
 export interface VideoObj {
@@ -69,7 +68,7 @@ export interface CateObj {
 
 interface SubMenuSettingObj {
     title: string
-    onPress: ()=> void
+    onPress: () => void
 }
 
 export interface PartSummary {
@@ -98,7 +97,7 @@ export interface PartSummary {
     isLocal?: boolean,
     isDecrypt?: boolean,
     isDeThi?: boolean,
-    level?:number
+    level?: number
 }
 
 export interface CharacterObj {
@@ -132,7 +131,7 @@ export interface Sentence {
     isEnableTranslate?: boolean,
     userSpeaking?: boolean,
     userSpeakingValue?: string,
-    isUserAnswerCorrect?:boolean
+    isUserAnswerCorrect?: boolean
 }
 
 export interface GroupQuestion {
@@ -142,4 +141,37 @@ export interface GroupQuestion {
     img: string,
     type: string,
     stt: number,
+}
+
+export interface MenuItem {
+    url_appstore?: string
+    url_schemes?: string
+    id?: any
+    iconName?: string,
+    imageSource?: any
+    imageSourceActive?: any
+    title?: string,
+    display?: string,
+    packageName?: string,
+    isSeleced?: boolean,
+    level?: number,
+    key?: string,
+    isLocal?: boolean,
+    isDecrypt?: boolean,
+    noDownload?: boolean,
+    isVoca?: boolean,
+    isReload?: boolean,
+    isAddCurrentNextLessonRow?: boolean
+    isAddCompleteTab?: boolean
+    isSelectedDefault?: boolean
+    type?: string
+    data?: any
+    isMaterialIcons?: boolean
+    isVideo?: boolean
+}
+
+export interface Session {
+    session?: string
+    isTopSession?: boolean
+    isSession?: boolean
 }
