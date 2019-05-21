@@ -11,6 +11,7 @@ declare const _default: {
     getStringSetting(): Promise<string>;
     getLanguageCode(): string;
     getLanguageCodeSave(): string;
+    saveLanguageCode(codeSave: string): Promise<void>;
     loadCurrentLanguageCode(): Promise<string>;
     updateCurrentLanguage(languageCode: string, callback?: (isSuccess: boolean) => void): void;
     setVIPUser(): Promise<void>;

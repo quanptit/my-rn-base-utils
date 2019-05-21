@@ -41,6 +41,9 @@ export default {
     getLanguageCodeSave(): string {
         return this.languageCodeSave;
     },
+    saveLanguageCode(codeSave: string){
+        return PreferenceUtils.saveSetingWithPromise("LANGUAGE_CODE", codeSave);
+    },
 
     async loadCurrentLanguageCode(): Promise<string> {
         let codeSave = await PreferenceUtils.getStringSetting("LANGUAGE_CODE");
