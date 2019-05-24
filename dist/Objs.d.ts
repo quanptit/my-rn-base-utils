@@ -154,3 +154,9 @@ export interface Session {
     isTopSession?: boolean;
     isSession?: boolean;
 }
+export interface LanguageObj {
+    code: string;
+    name?: string;
+    nativeName: string;
+    selected?: boolean;
+}

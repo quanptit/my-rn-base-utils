@@ -29,14 +29,18 @@ public class FileUtils {
             while ((ze = zis.getNextEntry()) != null) {
                 // zapis do souboru
                 filename = ze.getName();
+                File fmd = new File(dir, filename);
+                String canonicalPath = fmd.getCanonicalPath();
+                if (!canonicalPath.startsWith(dir)) {
+                    throw new SecurityException();
+                }
 
                 if (ze.isDirectory()) {
-                    File fmd = new File(dir, filename);
                     fmd.mkdirs();
                     continue;
                 }
 
-                FileOutputStream fout = new FileOutputStream(new File(dir, filename));
+                FileOutputStream fout = new FileOutputStream(fmd);
                 // cteni zipu a zapis
                 while ((count = zis.read(buffer)) != -1) {
                     fout.write(buffer, 0, count);
@@ -49,7 +53,7 @@ public class FileUtils {
             if (isDeleteFileZipAfterComplete) {
                 new File(dir, zipFileName).delete();
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
             return false;
         }
