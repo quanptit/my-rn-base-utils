@@ -21,6 +21,14 @@ public class FileUtils {
         try {
             String filename;
             is = new FileInputStream(new File(dir, zipFileName));
+            final String destPath;
+            try {
+                File extractTo = new File(dir);
+                destPath = extractTo.getCanonicalPath();
+            } catch (IOException ex) {
+                throw new IOException("Unable to extract files to destination path", ex);
+            }
+
             zis = new ZipInputStream(new BufferedInputStream(is));
             ZipEntry ze;
             byte[] buffer = new byte[1024];
@@ -31,7 +39,7 @@ public class FileUtils {
                 filename = ze.getName();
                 File fmd = new File(dir, filename);
                 String canonicalPath = fmd.getCanonicalPath();
-                if (!canonicalPath.startsWith(dir)) {
+                if (!canonicalPath.startsWith(destPath)) {
                     throw new SecurityException();
                 }
 

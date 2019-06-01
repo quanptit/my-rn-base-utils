@@ -71,6 +71,9 @@ export default {
     getAppName(): Promise<string> {
         return RNCommonUtils.getAppName()
     },
+    getBoolPref(pKey: string): Promise<boolean> {
+        return RNCommonUtils.getBoolPref(pKey);
+    },
     /**
      * fileAssetPath: sub path, với android là thư mục asset
      * */

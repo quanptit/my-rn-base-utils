@@ -208,6 +208,11 @@ public class RNCommonUtilsModule extends ReactContextBaseJavaModule {
         promise.resolve(value);
     }
 
+    @ReactMethod
+    public void getBoolPref(String pKey, Promise promise) {
+        promise.resolve(PreferenceUtils.getBooleanSetting(pKey));
+    }
+
     // region method phục vụ cho việc update =====
     // promise là int value
     @ReactMethod

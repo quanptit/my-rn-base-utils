@@ -17,6 +17,7 @@ declare const _default: {
     setVIPUser(): Promise<void>;
     isVIPUser(): Promise<boolean>;
     getAppName(): Promise<string>;
+    getBoolPref(pKey: string): Promise<boolean>;
     /**
      * fileAssetPath: sub path, với android là thư mục asset
      * */

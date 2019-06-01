@@ -62,6 +62,9 @@ export default {
     getAppName() {
         return RNCommonUtils.getAppName();
     },
+    getBoolPref(pKey) {
+        return RNCommonUtils.getBoolPref(pKey);
+    },
     /**
      * fileAssetPath: sub path, với android là thư mục asset
      * */
