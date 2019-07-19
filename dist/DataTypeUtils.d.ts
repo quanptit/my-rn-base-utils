@@ -14,5 +14,6 @@ export declare class DataTypeUtils {
     static getPercentSameOfTwoWord(str1: string, str2: string): number;
     /**Return số ký tự khác nhau của 2 chuỗi*/
     static getDistanceString(a: string, b: string): any;
+    static dateToHHMM(date: any): string;
     static dateToDDMMYYYY(date: any): string;
 }

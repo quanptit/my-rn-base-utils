@@ -101,6 +101,11 @@ export class DataTypeUtils {
         }
         return matrix[b.length][a.length];
     }
+    static dateToHHMM(date) {
+        let h = date.getHours();
+        let m = date.getMinutes(); //Month from 0 to 11
+        return (h <= 9 ? '0' + h : h) + ':' + (m <= 9 ? '0' + m : m);
+    }
     static dateToDDMMYYYY(date) {
         let d = date.getDate();
         let m = date.getMonth() + 1; //Month from 0 to 11
