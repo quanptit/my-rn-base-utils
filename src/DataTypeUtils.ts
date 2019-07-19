@@ -1,6 +1,7 @@
 const isEmpty = function (obj: any) {
     return obj == undefined || obj.length === 0
 };
+
 export class DataTypeUtils {
 
     //region interpolate: Phương pháp nội suy tính giá trị giữa 2 giá trị cho trước với đầu vào là giá trị trong [0-1]
@@ -116,4 +117,14 @@ export class DataTypeUtils {
 
         return matrix[b.length][a.length];
     }
+
+
+    static dateToDDMMYYYY(date) {
+        let d = date.getDate();
+        let m = date.getMonth() + 1; //Month from 0 to 11
+        let y = date.getFullYear();
+        return (d <= 9 ? '0' + d : d) + '-' + (m <= 9 ? '0' + m : m) + '-' + y;
+        // return '' + y + '-' + (m<=9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
+    }
+
 }
