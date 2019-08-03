@@ -8,6 +8,9 @@ export class DataTypeUtils {
         return a * (1 - valueIn0_1) + b * valueIn0_1;
     }
     //endregion
+    static isNumeric(n) {
+        return !isNaN(parseFloat(n)) && isFinite(n);
+    }
     // Returns minEqual <= value <= maxEqual
     static getRandomInt(minEqual, maxEqual) {
         return Math.floor(Math.random() * (maxEqual - minEqual + 1)) + minEqual;

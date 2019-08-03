@@ -12,6 +12,9 @@ export class DataTypeUtils {
     }
 
     //endregion
+    static isNumeric(n) {
+        return !isNaN(parseFloat(n)) && isFinite(n);
+    }
 
     // Returns minEqual <= value <= maxEqual
     static getRandomInt(minEqual, maxEqual) {

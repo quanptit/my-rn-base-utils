@@ -8,6 +8,7 @@ function isIOS() {
 }
 
 export class CommonUtils {
+
     // region navigator function
     static initBackForAndroid(handleBack?: () => void) {
         if (isIOS()) return;
