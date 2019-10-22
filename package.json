@@ -1,18 +1,24 @@
 {
   "name": "my-rn-base-utils",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "my-rn-base-utils",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "install_npm": "yarn install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "ads"
+    "react-native"
   ],
   "author": "Quan Trinh Van",
-  "license": "Quan Trinh Van",
-  "nativePackage": true,
+  "license": "ISC",
+  "homepage": "https://github.com/quanptit/my-rn-base-utils",
+  "bugs": "https://github.com/quanptit/my-rn-base-utils/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quanptit/my-rn-base-utils.git"
+  },
   "dependencies": {
     "lodash": "^4.17.11"
   },

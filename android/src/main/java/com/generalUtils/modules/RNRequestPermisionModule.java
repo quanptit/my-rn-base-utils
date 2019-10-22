@@ -2,7 +2,7 @@ package com.generalUtils.modules;
 
 import android.Manifest;
 import android.app.Activity;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.baseLibs.BaseReactActivtiy;
