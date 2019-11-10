@@ -1,5 +1,6 @@
 declare const _default: {
     languageCode: any;
+    isVipUserValue: any;
     languageCodeSave: any;
     lastModified(filePath: string): Promise<number>;
     /**
@@ -16,6 +17,8 @@ declare const _default: {
     updateCurrentLanguage(languageCode: string, callback?: (isSuccess: boolean) => void): void;
     setVIPUser(): Promise<void>;
     isVIPUser(): Promise<boolean>;
+    loadVIPUserState(): Promise<void>;
+    isVipUserInstant(): boolean;
     getAppName(): Promise<string>;
     getBoolPref(pKey: string): Promise<boolean>;
     /**

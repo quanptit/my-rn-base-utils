@@ -4,6 +4,7 @@ import { isEmpty } from "./CommonFunction";
 const RNCommonUtils = Platform.OS === "ios" ? NativeModules.RNCommonUtilsIOS : NativeModules.RNCommonUtilsAndroid;
 export default {
     languageCode: null,
+    isVipUserValue: null,
     languageCodeSave: null,
     //return number seconds
     lastModified(filePath) {
@@ -56,8 +57,17 @@ export default {
     setVIPUser() {
         return RNCommonUtils.setVIPUser();
     },
-    isVIPUser() {
-        return RNCommonUtils.isVIPUser();
+    async isVIPUser() {
+        RNCommonUtils.isVipUserValue = await RNCommonUtils.isVIPUser();
+        return RNCommonUtils.isVipUserValue;
+    },
+    async loadVIPUserState() {
+        RNCommonUtils.isVipUserValue = await RNCommonUtils.isVIPUser();
+    },
+    isVipUserInstant() {
+        if (RNCommonUtils.isVipUserValue == null)
+            RNCommonUtils.loadVIPUserState();
+        return RNCommonUtils.isVipUserValue;
     },
     getAppName() {
         return RNCommonUtils.getAppName();

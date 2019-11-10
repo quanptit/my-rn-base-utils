@@ -37,7 +37,7 @@ export declare class CommonUtils {
     static runAfterInteractions(doFunc: any, isSkipTimeout?: boolean): void;
     static setState(component: any, state: any): Promise<void>;
     static requestAnimationFrameWithPromise(): Promise<void>;
-    static waitAfterInteractions(isSkipTimeout?: boolean): Promise<{}>;
+    static waitAfterInteractions(isSkipTimeout?: boolean): Promise<unknown>;
     static wait(timeMili: any): Promise<void>;
     static forceUpdateWithPromise(component: any): Promise<void>;
     /**Neu Timeout => reject is called*/

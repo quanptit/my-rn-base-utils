@@ -6,6 +6,7 @@ const RNCommonUtils = Platform.OS === "ios" ? NativeModules.RNCommonUtilsIOS : N
 
 export default {
     languageCode: null,
+    isVipUserValue: null,
     languageCodeSave: null,
 
     //return number seconds
@@ -41,7 +42,7 @@ export default {
     getLanguageCodeSave(): string {
         return this.languageCodeSave;
     },
-    saveLanguageCode(codeSave: string){
+    saveLanguageCode(codeSave: string) {
         return PreferenceUtils.saveSetingWithPromise("LANGUAGE_CODE", codeSave);
     },
 
@@ -65,8 +66,17 @@ export default {
     setVIPUser(): Promise<void> {
         return RNCommonUtils.setVIPUser()
     },
-    isVIPUser(): Promise<boolean> {
-        return RNCommonUtils.isVIPUser()
+    async isVIPUser(): Promise<boolean> {
+        RNCommonUtils.isVipUserValue = await RNCommonUtils.isVIPUser();
+        return RNCommonUtils.isVipUserValue;
+    },
+    async loadVIPUserState() {
+        RNCommonUtils.isVipUserValue = await RNCommonUtils.isVIPUser();
+    },
+    isVipUserInstant(): boolean {
+        if (RNCommonUtils.isVipUserValue == null)
+            RNCommonUtils.loadVIPUserState();
+        return RNCommonUtils.isVipUserValue;
     },
     getAppName(): Promise<string> {
         return RNCommonUtils.getAppName()

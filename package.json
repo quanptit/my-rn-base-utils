@@ -1,11 +1,13 @@
 {
   "name": "my-rn-base-utils",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "my-rn-base-utils",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "install_npm": "yarn install",
+    "link_libs": "yarn link @types/react @types/react-native @types/lodash react react-native lodash my-rn-common-resource react-native-router-flux rn-fetch-blob",
+    "npm_publish": "npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
