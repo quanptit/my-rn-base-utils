@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39767e11-7543-4f16-ba12-0eab2640477a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/my-rn-base-utils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/my-rn-base-utils.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/assets/fonts/Ionicons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/assets/fonts/MaterialIcons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/Objs.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/Objs.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Objs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,36 +21,6 @@
         <option value="Class TS" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>esModuleInterop</find>
-      <find>lib</find>
-      <find>StyleUtils</find>
-      <find>s.</find>
-      <find>flex</find>
-      <find>RNCommonUtils</find>
-      <find>FileUtils</find>
-      <find>remove</find>
-      <find>playSoundAssetFile</find>
-      <find>Prototype</find>
-      <find>isVip</find>
-      <find>getCachedDownloadDir</find>
-      <find>User</find>
-      <find>asset</find>
-      <find>isEqual</find>
-      <find>baihoc</find>
-      <find>detai</find>
-      <find>base</find>
-      <find>log</find>
-      <find>MenuItem</find>
-      <find>Session</find>
-      <find>waitAfterInteractions</find>
-      <find>rn-fetch-blob</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -123,7 +97,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../my-rn-cached-image" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -133,7 +107,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -599,7 +573,18 @@
     <MESSAGE value="update" />
     <MESSAGE value="2.0.1 - Remove dialog libs" />
     <MESSAGE value="2.0.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.0.2" />
+    <MESSAGE value="2.0.3 - Cập nhật cái font" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.0.3 - Cập nhật cái font" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2660" y="347" key="FileChooserDialogImpl" timestamp="1600064368462">
+      <screen x="1920" y="72" width="1920" height="1040" />
+    </state>
+    <state x="2660" y="347" key="FileChooserDialogImpl/0.0.1920.1040/1920.72.1920.1040@1920.72.1920.1040" timestamp="1600064368462" />
+    <state x="2543" y="297" width="672" height="678" key="search.everywhere.popup" timestamp="1600063911061">
+      <screen x="1920" y="72" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="297" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.72.1920.1040@1920.72.1920.1040" timestamp="1600063911061" />
   </component>
   <component name="masterDetails">
     <states>

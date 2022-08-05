@@ -18,4 +18,5 @@ export interface IPathUtilsModule {
     getROOT(): string;
     getROOT_RESOURCE(): string;
     getCachedDownloadDir(): string;
+    getFilePathCache(subPathOrUrl: string): string;
 }

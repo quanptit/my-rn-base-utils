@@ -127,7 +127,11 @@ export interface MenuItem {
     url_appstore?: string;
     url_schemes?: string;
     id?: any;
-    iconName?: string;
+    renderIcon?: (props: {
+        fontSize: number;
+        color: string;
+        style?: any;
+    }) => any;
     imageSource?: any;
     imageSourceActive?: any;
     title?: string;
